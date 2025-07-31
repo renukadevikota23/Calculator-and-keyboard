@@ -1,0 +1,220 @@
+<html >
+  <head>
+    
+    <title>Keyboard</title>
+  </head>
+  <body>
+    <!-- <input type="text" id="display" placeholder="" disabled /> -->
+    <style>
+      body {
+        background-color: ghostwhite;
+        align-items: center;
+        align-content: center;
+        border: 2px solid black;
+      }
+      #container > div {
+        background-color: black;
+      }
+      #container > div {
+        background-color: black;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        
+      }
+      #container > div {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        gap: 5px;
+        padding: 50px;
+        width: 90%;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+
+      }
+      #container1 {
+        border-radius: 5px;
+        /* border: 2px solid blueviolet; */
+        margin-top: 10px;
+        align-content: center;
+        margin-left: 20px;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 5px;
+        padding: 50px;
+        width: 90%;
+        border-radius: 10px;
+        border-top: 0px;
+      }
+      #container > div:hover {
+        cursor: pointer;
+        background-color: rgb(80, 195, 195);
+      }
+      #enter {
+        grid-column: span 2;
+      }
+      #space {
+        grid-column: span 4;
+      }
+      #back {
+        grid-column: span 2;
+      }
+      #caps {
+        grid-column: span 2;
+      }
+      #Tab {
+        grid-column: span 2;
+      }
+      #shift {
+        grid-column: span 2;
+      }
+      #up {
+        grid-column: span 2;
+      }
+      #down {
+        grid-column: span 2;
+      }
+      #left {
+        grid-column: span 2;
+      }
+      #right {
+        grid-column: span 2;
+      }
+      #shift1 {
+        grid-column: span 3;
+      }
+      #white {
+        background-color: white;
+        grid-column: span 10;
+        margin-left: 800px;
+      }
+       #display {
+        height: 90px;
+        font-size: 20px;
+      }
+      #display {
+      width: 900%;
+      max-width: 1105px;
+      height: 80px;
+      font-size: 24px;
+      text-align: right;
+      padding: 80px;
+      margin-left: 65px;
+      
+      margin-top: 5px;
+      border-radius: 0px;
+      border: 2px solid black;
+      background-color: white;
+    }
+    </style>
+
+    <div id="container1">
+      <!-- Function Keys -->
+      <div id="container">
+        <div>Esc</div>
+        <div>F1</div>
+        <div>F2</div>
+        <div>F3</div>
+        <div>F4</div>
+        <div>F5</div>
+        <div>F6</div>
+        <div>F7</div>
+        <div>F8</div>
+        <div>F9</div>
+        <div>F10</div>
+        <div>F11</div>
+        <div>F12</div>
+        <div>Ins</div>
+        <div>Del</div>
+         <div>~</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>-</div>
+        <div>=</div>
+        <div id="back">Back</div>
+        <div id="Tab">Tab</div>
+        <div>Q</div>
+        <div>W</div>
+        <div>E</div>
+        <div>R</div>
+        <div>T</div>
+        <div>Y</div>
+        <div>U</div>
+        <div>I</div>
+        <div>O</div>
+        <div>P</div>
+        <div>[</div>
+        <div>]</div>
+        <div>\</div>
+        <div id="caps">Caps</div>
+        <div>A</div>
+        <div>S</div>
+        <div>D</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div>;</div>
+        <div>'</div>
+        <div id="enter">Enter</div>
+        <div id="shift">Shift</div>
+        <div>Z</div>
+        <div>X</div>
+        <div>C</div>
+        <div>V</div>
+        <div>B</div>
+        <div>N</div>
+        <div>M</div>
+        <div>,</div>
+        <div>.</div>
+        <div>/</div>
+        <div id="shift1">Shift</div>
+        <div>Ctrl</div>
+        <div>Fn</div>
+        <div>Win</div>
+        <div>Alt</div>
+        <div id="space">Space</div>
+        <div>Alt</div>
+        <div>Ctrl</div>
+        <div id="up">PgUp</div>
+        <div>↑</div>
+        <div id="down">PgDn</div>
+        <div id="white"></div>
+        <div id="left">←</div>
+        <div>↓</div>
+        <div id="right">→</div>
+      </div>
+    </div>
+  </body>
+</html>

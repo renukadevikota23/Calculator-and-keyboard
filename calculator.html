@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <title>Calculator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #display {
+      width: 90%;
+      max-width: 450px;
+      height: 60px;
+      font-size: 24px;
+      text-align: right;
+      padding: 10px;
+      margin-bottom: 0px;
+      border-radius: 0px;
+      border: 2px solid black;
+      background-color: white;
+    }
+
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 0px;
+      background-color: white;
+      border: 2px solid black;
+    }
+
+    #container > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+      user-select: none;
+      font-style: italic;
+    }
+    #container >div:nth-child(1){
+      background-color: grey;
+    }
+    #container >div:nth-child(2){
+      background-color: grey;
+    }
+    #container >div:nth-child(3){
+      background-color: grey;
+    }
+    #container >div:nth-child(4){
+      background-color: coral;
+    }
+    #container >div:nth-last-child(1){
+      background-color: coral;
+    }
+    #container >div:nth-last-child(5){
+      background-color: coral;
+    }
+    #container >div:nth-last-child(9){
+      background-color: coral;
+    }
+    #container >div:nth-last-child(13){
+      background-color: coral;
+    }
+
+    #container > div:hover {
+      background-color: rgb(189, 199, 48);
+      cursor: pointer;
+    }
+    
+
+    /* #operator {
+      background-color: coral ;
+    }
+
+    #action {
+      background-color: rgb(186, 136, 136) ;
+      color: black;
+    }
+
+    #equal {
+
+      background-color: blueviolet
+      
+    } */
+
+   
+      #container > div {
+        height: 50px;
+        font-size: 18px;
+      }
+
+      #display {
+        height: 50px;
+        font-size: 20px;
+      }
+    
+  </style>
+</head>
+<body>
+
+  <input type="text" id="display" placeholder="0" disabled />
+
+  <div id="container">
+    <div id="action">AC</div>
+    <div id="action">+/-</div>
+    <div id="action">%</div>
+    <div id="operator">/</div>
+
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div id="operator">*</div>
+
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div id="operator">-</div>
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div id="operator">+</div>
+
+    <div>cal</div>
+    <div>0</div>
+    <div>.</div>
+    <div id="equal">=</div>
+  </div>
+
+</body>
+</html>
